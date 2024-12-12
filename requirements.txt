@@ -1,0 +1,20 @@
+ipykernel
+langchain-community
+langchain_openai
+langchain_core
+bs4
+faiss-cpu
+wikipedia
+arxiv
+pypdf
+pymupdf #for arxiv
+langchain-text-splitters
+langchain-chroma
+langchain-ollama
+langchain-groq
+langchain-huggingface
+streamlit
+langserve
+fastapi
+uvicorn
+sse_starlette
