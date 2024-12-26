@@ -10,3 +10,5 @@ LANGCHAIN_ENDPOINT=os.environ.get("LANGCHAIN_ENDPOINT") or "https://api.smith.la
 GROQ_API_KEY=os.environ.get("GROQ_API_KEY")
 
 IP_WHITELIST = os.environ.get("IP_WHITELIST") or ["127.0.0.1"]
+
+TAVILY_API_KEY=os.environ.get("TAVILY_API_KEY")

@@ -29,7 +29,8 @@ def llm_by_huggingface(model: str = "BAAI/bge-small-en-v1.5", temperature: float
     return llm
 
 def llms_by_groq(model: str = "mixtral-8x7b-32768",
-                temperature: float = 0.7) -> ChatGroq:
+                temperature: float = 0.7,
+                streaming: bool = True) -> ChatGroq:
     """
     This function is used to create the llm model using groq.
     Models useable: ['gemma2-9b-it',
@@ -55,5 +56,5 @@ def llms_by_groq(model: str = "mixtral-8x7b-32768",
     llm=ChatGroq(model=model,
                  temperature=temperature,
                  groq_api_key=GROQ_API_KEY,
-                 streaming=True)
+                 streaming=streaming)
     return llm
